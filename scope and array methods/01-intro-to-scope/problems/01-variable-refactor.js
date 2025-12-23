@@ -18,7 +18,7 @@ the logic to further improve this solution to only use one count object.
 
 const areAnagrams = (word1, word2) => {
   
-  let result; // this should not automatically be true. 
+  let result = true;
 
   if (word1.length !== word2.length) {
     result = false;
