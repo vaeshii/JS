@@ -17,7 +17,7 @@ the logic to further improve this solution to only use one count object.
 */
 
 const areAnagrams = (word1, word2) => {
-  // TODO
+  
 };
 
 // console.log(areAnagrams("cat", "act"));          // true
