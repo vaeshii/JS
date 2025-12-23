@@ -28,7 +28,40 @@ Run the code again. If successful, you should see the counter print out 1,
 */
 
 // EXAMPLE 1:
-// TODO
+let counter1 = 0;
+
+function incrementCounter1(counter1) {
+  counter1 += 1;
+  console.log(counter1);
+}
+
+console.log("*****Example 1: Your Code*****")
+
+incrementCounter1();   // ?
+console.log(`First counter value:  ${counter1}`)    // ?
+
+incrementCounter1();   // ?
+console.log(`Second counter value:  ${counter1}`)    // ?
+
+incrementCounter1();   // ?
+console.log(`Third counter value:  ${counter1}`)    // ?
+
 
 // EXAMPLE 2:
-// TODO
+let counter2 = 0;
+
+function incrementCounter2() {
+  counter2 += 1;
+  console.log(counter2);
+}
+
+console.log("*****Example 2: Your Friend's Code*****")
+
+incrementCounter2(counter2);    // ?
+console.log(`First counter value:  ${counter2}`)    // ?
+
+incrementCounter2(counter2);    // ?
+console.log(`Second counter value:  ${counter2}`)    // ?
+
+incrementCounter2(counter2);    // ?
+console.log(`Third counter value:  ${counter2}`)    // ?
