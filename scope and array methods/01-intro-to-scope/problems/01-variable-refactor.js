@@ -18,7 +18,40 @@ the logic to further improve this solution to only use one count object.
 
 const areAnagrams = (word1, word2) => {
   
-};
+  let result; // this should not automatically be true. 
+
+  if (word1.length !== word2.length) {
+    result = false;
+    return result;
+  }
+
+  const count1 = {}; // this should be a const because the count of word1 isnt going to change!
+
+  for (let i = 0; i < word1.length; i++) {
+    if (count1[word1[i]]) {
+      count1[word1[i]]++;
+    } else {
+      count1[word1[i]] = 1;
+    }
+  }
+
+  const count2 = {}; // same as count1, value is static.
+
+  for (let i = 0; i < word2.length; i++) {
+    if (count2[word2[i]]) {
+      count2[word2[i]]--;
+    } else {
+      count2[word2[i]] = 1;
+    }
+  }
+
+  for (const char in count1) {
+    if (count1[char] !== count2[char]) {
+      return false;
+    }
+  }
+  return true;
+}
 
 // console.log(areAnagrams("cat", "act"));          // true
 // console.log(areAnagrams("restful", "fluster"));  // true
