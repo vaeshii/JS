@@ -7,6 +7,8 @@ it produces the correct output.
 Example 1: Predict what will be printed when `incrementCounter1()` is called.
 What will happen when `incrementCounter1()` is called 3 times in a row?
 
+The number will equal 0.
+
 Run the code, `node problems/02-debugging.js` and compare the output to your
 prediction.
 
@@ -30,20 +32,20 @@ Run the code again. If successful, you should see the counter print out 1,
 // EXAMPLE 1:
 let counter1 = 0;
 
-function incrementCounter1(counter1) {
+function incrementCounter1() {
   counter1 += 1;
   console.log(counter1);
 }
 
 console.log("*****Example 1: Your Code*****")
 
-incrementCounter1();   // ?
+incrementCounter1(counter1);   // ?
 console.log(`First counter value:  ${counter1}`)    // ?
 
-incrementCounter1();   // ?
+incrementCounter1(counter1);   // ?
 console.log(`Second counter value:  ${counter1}`)    // ?
 
-incrementCounter1();   // ?
+incrementCounter1(counter1);   // ?
 console.log(`Third counter value:  ${counter1}`)    // ?
 
 
